@@ -26,6 +26,9 @@ parameters:
 trigger:
   - none
 
+pool:
+  vmimage: Linux (ubuntu 20.04)
+
 stages:
   - stage: 
     displayName: 'Terraform plan'
