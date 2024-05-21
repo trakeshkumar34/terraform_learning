@@ -31,9 +31,6 @@ stages:
     displayName: 'Terraform plan'
     jobs:
       - job: plan
+        displayName: 'Initialize and Plan the terraform'
         steps:
-          - task: Bash@3
-            inputs:
-              targetType: 'inline'
-              script: /
-                echo "lol"
+          - template: templates/tf_plan.yml

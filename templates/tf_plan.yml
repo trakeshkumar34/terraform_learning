@@ -1,0 +1,16 @@
+---
+steps:
+  - task: TerraformInstaller@1
+    inputs:
+      terraformVersion: '1.8.3'
+
+  - task: TerraformTaskV4@4
+    inputs:
+      provider: 'azurerm'
+      command: 'init'
+      workingDirectory: '$(System.DefaultWorkingDirectory)/ll'
+      backendServiceArm: 'Free Trial(2)(7ec8a192-5f61-4b0b-ac63-ea84e3c3fdbb)'
+      backendAzureRmResourceGroupName: 'devopstraining12345-cus-rg'
+      backendAzureRmStorageAccountName: 'devopstrainingsd12345'
+      backendAzureRmContainerName: 'devopstrainingcon12345'
+      backendAzureRmKey: 'initial.terraform.tfstate'
