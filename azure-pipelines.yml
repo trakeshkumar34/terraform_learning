@@ -27,7 +27,7 @@ trigger:
   - none
 
 pool:
-  vmimage: Linux (ubuntu 20.04)
+  vmImage: 'ubuntu-latest'
 
 stages:
   - stage: 
