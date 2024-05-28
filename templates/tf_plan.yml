@@ -4,7 +4,7 @@ steps:
     inputs:
       terraformVersion: '1.8.3'
 
-  - task: 'Terraform is getting initialized'
+  - task: 'Terraform@Initialization'
     inputs:
       provider: 'azurerm'
       command: 'init'
