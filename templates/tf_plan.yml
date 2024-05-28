@@ -4,11 +4,10 @@ steps:
     inputs:
       terraformVersion: '1.8.3'
 
-  - task: TerraformTaskV4@4
+  - task: 'Terraform is getting initialized'
     inputs:
       provider: 'azurerm'
       command: 'init'
-      workingDirectory: '$(System.DefaultWorkingDirectory)'
       backendServiceArm: 'Free Trial(2)(7ec8a192-5f61-4b0b-ac63-ea84e3c3fdbb)'
       backendAzureRmResourceGroupName: 'devopstraining12345-cus-rg'
       backendAzureRmStorageAccountName: 'devopstrainingsd12345'
