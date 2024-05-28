@@ -27,7 +27,7 @@ trigger:
   - none
 
 pool:
-  name: SKYDEVOPS-POOL
+  vmImage: ubuntu-latest
 
 stages:
   - stage: 
