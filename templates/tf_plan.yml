@@ -4,7 +4,7 @@ steps:
     inputs:
       terraformVersion: '1.8.3'
 
-  - task: Terraform@1
+  - task: TerraformTaskV4@4
     inputs:
       provider: 'azurerm'
       command: 'init'
